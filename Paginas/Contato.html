@@ -1,0 +1,84 @@
+<html lang="pt-br">
+  <head>
+    <style type="text/css">
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.redes-sociais a {
+  font-size: 90px;
+  margin: 20px; 
+  color: white;
+}
+
+
+
+
+
+    </style>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="../Estilos/estilo.css">
+   </head>
+   <body>
+    <div class="Background">
+      <header>
+        <div class="Logo">
+          <i class="fa-solid fa-e"></i>
+        </div><!--logo-->
+        <div class="Cabecalho-link">
+          <li>
+            <a href="../Index.html">Home</a>
+          </li>
+          <li>
+            <a href="Sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="Certificados.html">Certificados</a>
+          </li>
+          <li>
+            <a href="Projetos.html">Projetos</a>
+          </li>
+          <button onclick="contact()">Voltar</button>
+        </div><!--Cabeçalho link-->
+      </header>
+      <div class="Meu-contato">
+        <div class="Contato">
+          <div class="redes-sociais">
+          <a href="https://www.linkedin.com/in/erick-britto-2187ba261" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/erkbritto" target="_blank"><i class="fa-brands fa-github" target="_blank"></i></a>
+          <a href="https://www.instagram.com/erkbritto/?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSHxjbbMckpMHMhBPHtrCcxvsdNFTjwJZknlXNSVvfDJHbqvGWGtwwNSTqJCTfxBCkhkfdWP" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+         <a href="https://wa.me/5511940283681" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        function contact() {
+                  window.location.href = '../Index.html';
+                }
+                // Função para alternar a exibição do menu
+            function toggleMenu() {
+              var menuList = document.querySelector('.menu-list');
+              menuList.style.display = (menuList.style.display === 'block') ? 'none' : 'block';
+              }
+      </script>
+      <div class="navigation-box">
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="menu-list">
+      <li><a href="../Index.html">Home</a></li>
+      <li><a href="Sobre.html">Sobre</a></li>
+      <li><a href="Certificados.html">Certificados</a></li>
+      <li><a href="Projetos.html">Projetos</a></li>
+    </ul>
+  </div>

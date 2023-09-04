@@ -1,0 +1,121 @@
+<html lang="pt-br">
+  <head>
+    <style type="text/css">
+      .slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+    </style>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificados</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="../Estilos/estilo.css">
+   </head>
+   <body>
+    <div class="Background">
+      <header>
+        <div class="Logo">
+          <i class="fa-solid fa-e"></i>
+        </div><!--logo-->
+        <div class="Cabecalho-link">
+          <li>
+            <a href="../Index.html">Home</a>
+          </li>
+          <li>
+            <a href="Sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="Projetos.html">Projetos</a>
+          </li>
+          <button onclick="contact()">Meu Contato</button>
+        </div><!--Cabeçalho link-->
+      </header>
+      <!--FOTO DE PERFIL-->
+      <!--<div class="fotos">
+        <div class="minha-foto">
+          <img src="Imagens/Me.jpg">
+        </div>
+      </div>-->
+
+
+
+      <div class="slider">
+    <div class="arrow arrow-left">&#10094;</div>
+    <img id="slider-image" src="imagem1.jpg">
+    <div class="arrow arrow-right">&#10095;</div>
+  </div>
+
+  <script>
+    
+    const images = ["../Imagens/html básico.PNG", "../Imagens/html avançado.PNG", "../Imagens/html e css na prática.PNG", "../Imagens/fundamentos lógica de programação.PNG", "../Imagens/logica.PNG" , "../Imagens/C.PNG" , "../Imagens/SQL.PNG" , "../Imagens/asp net certificado.PNG"]; // Adicione aqui os nomes das suas imagens
+let currentImageIndex = 0;
+
+const sliderImage = document.getElementById("slider-image");
+const arrowLeft = document.querySelector(".arrow-left");
+const arrowRight = document.querySelector(".arrow-right");
+
+function showImage(index) {
+  sliderImage.src = images[index];
+}
+
+arrowLeft.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+  showImage(currentImageIndex);
+});
+
+arrowRight.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  showImage(currentImageIndex);
+});
+
+showImage(currentImageIndex);
+
+function contact() {
+                  window.location.href = 'Contato.html';
+                }
+// Função para alternar a exibição do menu
+            function toggleMenu() {
+              var menuList = document.querySelector('.menu-list');
+              menuList.style.display = (menuList.style.display === 'block') ? 'none' : 'block';
+              }
+  </script>
+  <div class="navigation-box">
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="menu-list">
+      <li><a href="../Index.html">Home</a></li>
+      <li><a href="Sobre.html">Sobre</a></li>
+      <li><a href="Projetos.html">Projetos</a></li>
+    </ul>
+  </div>
+</body>
+</html>
+
+

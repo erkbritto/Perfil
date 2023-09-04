@@ -1,0 +1,82 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="Estilos/estilo.css">
+   </head>
+   <body>
+    <div class="Background">
+      <header>
+        <div class="Logo">
+          <i class="fa-solid fa-e"></i>
+        </div><!--logo-->
+        <div class="Cabecalho-link">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="Paginas/Sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="Paginas/Certificados.html">Certificados</a>
+          </li>
+          <li>
+            <a href="Paginas/Projetos.html">Projetos</a>
+          </li>
+          <button onclick="contact()">Meu Contato</button>
+        </div><!--Cabeçalho link-->
+      </header>
+      <!--FOTO DE PERFIL-->
+      <div class="fotos">
+        <div class="minha-foto">
+          <img src="Imagens/Me.jpg">
+        </div>
+      </div>
+      <div class="container-text">
+        <div class="text">
+          <h3>Olá pessoal</h3>
+          <h1>Eu sou <spam>Erick De Britto Carvalho</spam></h1>
+          <p>Sou um desenvolvedor <spam>FULLSTACK</spam>
+          <br>e nesse portfolio é onde você ira me acompanhar</p>
+        </div>
+        <div class="redes-sociais">
+          <a href="https://www.linkedin.com/in/erick-britto-2187ba261"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+          <a href="https://github.com/erkbritto" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/erkbritto/?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div><!--redes sociais-->
+        <button class="btn" onclick="goSobre()">Sobre mim</button>
+      </div>
+    </div><!--Background-->
+<!-- Caixa de navegação (box bar) -->
+  <div class="navigation-box">
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="menu-list">
+      <li><a href="Paginas/Sobre.html">Sobre</a></li>
+      <li><a href="Paginas/Certificados.html">Certificados</a></li>
+      <li><a href="Paginas/Projetos.html">Projetos</a></li>
+    </ul>
+  </div>
+        <script type="text/javascript">
+          // Função para alternar a exibição do menu
+            function toggleMenu() {
+              var menuList = document.querySelector('.menu-list');
+              menuList.style.display = (menuList.style.display === 'block') ? 'none' : 'block';
+              }
+                function goSobre() {
+                  window.location.href = 'Paginas/Sobre.html';
+                }
+
+                function contact() {
+                  window.location.href = 'Paginas/Contato.html';
+                }
+
+        </script>
+   </body>
+</html>
